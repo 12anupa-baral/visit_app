@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+ 
+/* Mobile styles (up to 599px wide screens) */
+@media only screen and (max-width: 599px) {
+    .container {
+        width: 100%;
+        margin: 0; 
+        flex-direction: column; 
+        padding: 10px; 
+    }
+
+    .country {
+        width: 90%; 
+        margin: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Reset margin for full width */
+    }
+
+    .header {
+        font-size: 25px; 
+        margin-top: 10px; 
+        margin-left: 15px;
+        margin-bottom: 10px;
+        font-weight: bold; 
+    }
+
+
+    .name {
+        font-size: 24px;
+        font-weight:bold ;
+        color: rgba(82, 83, 103, 1); 
+        
+    }
+
+    /* Add any additional mobile-specific styles here */
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .container {
+        display: flex;
+        flex-direction: row; 
+        width: 1000px;
+        margin-left:40px;
+        margin-bottom:20px;
+        
+        
+    }
+
+    .country {
+        width: 600px; 
+        height:180px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin: 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .header{
+        font-family: 'Raleway', sans-serif;
+        font-size: 36px;
+        font-weight:bold ;
+        margin-top:30px;
+        margin-left:60px;
+    }
+    
+    .name {
+        font-family: 'Raleway', sans-serif;
+        font-size:30px;
+        font-weight: bold;
+        color: rgba(95, 95, 95, 1);
+       
+    }
+
+
+}
+
+    h2 {
+        margin-top: 20px;
+        margin-left: 60px;
+        
+    }
+
+    img{
+        height: 180px;
+        width:40%;
+    }
+    
+
+    .about{
+        height: 180px;
+        width:50%;
+        float:right;
+        padding:10px;
+        text-align:left;
+        }
+
+    
+
+    .capital{
+        color: rgba(95, 95, 95, 1);
+    }
+

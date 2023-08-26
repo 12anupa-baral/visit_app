@@ -5,36 +5,40 @@
 
 
 
- 
+
 /* Mobile styles (up to 599px wide screens) */
-@media only screen and (max-width: 599px) {
+
+@media screen and (max-width: 599px) {
     .container {
         width: 100%;
-        margin: 0; 
-        flex-direction: column; 
-        padding: 10px; 
+        padding: 20px;
+        align-items: center;
     }
 
     .country {
-        width: 90%; 
-        margin: 5px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Reset margin for full width */
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        /* Reset margin for full width */
     }
 
     .header {
-        font-size: 25px; 
-        margin-top: 10px; 
-        margin-left: 15px;
+        font-size: 12px;
+        margin-top: 20px;
+        margin-left: 10px;
         margin-bottom: 10px;
-        font-weight: bold; 
+        font-weight: bold;
+        font-family: 'Raleway', sans-serif;
     }
 
 
     .name {
-        font-size: 24px;
-        font-weight:bold ;
-        color: rgba(82, 83, 103, 1); 
-        
+        font-size: 20px;
+        font-weight: bold;
+        color: rgba(82, 83, 103, 1);
+        font-family: 'Raleway', sans-serif;
+
     }
 
     /* Add any additional mobile-specific styles here */
@@ -42,69 +46,79 @@
 
 
 
-@media only screen and (min-width: 768px) {
+
+
+@media screen and (min-width: 768px) {
+
     /* For desktop: */
     .container {
         display: flex;
-        flex-direction: row; 
-        width: 1000px;
-        margin-left:40px;
-        margin-bottom:20px;
-        
-        
+        flex-wrap: wrap;
+        width: 100%px;
+        margin-left: 130px;
+        margin-bottom: 20px;
+
+
     }
 
     .country {
-        width: 600px; 
-        height:180px;
+
+
+
+        width: 600px;
+        height: 200px;
         border-radius: 10px;
         box-sizing: border-box;
         margin: 15px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
-    .header{
+    h1 {
         font-family: 'Raleway', sans-serif;
-        font-size: 36px;
-        font-weight:bold ;
-        margin-top:30px;
-        margin-left:60px;
+        margin-top: 30px;
+        margin-left: 140px;
+        margin-bottom: 10px;
+
+
     }
-    
+
     .name {
         font-family: 'Raleway', sans-serif;
-        font-size:30px;
+        font-size: 25px;
         font-weight: bold;
         color: rgba(95, 95, 95, 1);
-       
+
     }
 
 
 }
 
-    h2 {
-        margin-top: 20px;
-        margin-left: 60px;
-        
-    }
 
-    img{
-        height: 180px;
-        width:40%;
-    }
-    
+img {
+    height: 200px;
+    width: 32%;
+    margin-right: 5px;
+}
 
-    .about{
-        height: 180px;
-        width:50%;
-        float:right;
-        padding:10px;
-        text-align:left;
-        }
 
-    
+.about {
+    height: 200px;
+    width: 65%;
+    float: right;
+    margin-top: 10px;
+    text-align: left;
+    padding: 2px;
 
-    .capital{
-        color: rgba(95, 95, 95, 1);
-    }
+}
 
+
+
+.capital {
+    color: rgba(95, 95, 95, 1);
+    margin-top: 0px;
+}
+
+p {
+    margin-top: 10px;
+    font-family: 'Raleway', sans-serif;
+}
